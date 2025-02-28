@@ -31,7 +31,7 @@ def menu():
             limpiar_terminal()
             print("\n--- Guardar Ventas ---")
             guardar_ventas(ventas)
-            ventas = []
+            #ventas = []
             pausar()
         elif opcion == "3":
             limpiar_terminal()
