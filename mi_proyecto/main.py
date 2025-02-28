@@ -1,5 +1,5 @@
 import os
-from modulo1 import ingresar_ventas
+from modulo1 import ingresar_ventas, guardar_ventas
 
 
 def limpiar_terminal():
@@ -29,9 +29,9 @@ def menu():
             pausar()
         elif opcion == "2":
             limpiar_terminal()
-            
             print("\n--- Guardar Ventas ---")
-            #guardar_csv
+            guardar_ventas(ventas)
+            ventas = []
             pausar()
         elif opcion == "3":
             limpiar_terminal()
