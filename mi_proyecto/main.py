@@ -1,4 +1,6 @@
 import os
+from modulo1 import ingresar_ventas
+
 
 def limpiar_terminal():
     """Limpia la pantalla de la terminal."""
@@ -22,10 +24,12 @@ def menu():
         if opcion == "1":
             limpiar_terminal()
             print("\n--- Ingreso de Ventas ---")
-            #ingresar_datos
+            ingresar_ventas(ventas)
+            print(ventas)
             pausar()
         elif opcion == "2":
             limpiar_terminal()
+            
             print("\n--- Guardar Ventas ---")
             #guardar_csv
             pausar()
